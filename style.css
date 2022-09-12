@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    font-family:'Roboto',sans-serif;/*字体设置*/
+	margin:0; padding:0;/*margin属性用来规定围绕在元素边框周围空白区域范围的属性*/
+	box-sizing:border-box;/*设置盒模型*/
+	outline:none; border:none;
+	text-decoration:none;/*添加文本的装饰*/
+	text-transform:capitalize;/*定义带有小写字母或大写字母的标准文本*/
+	transition:all .2s linear;/*规定过渡效果*/
+	line height:1.5;
+}
+
+html{
+	 font-size:62.5%;
+	 overflow-x:hidden;/*对溢出内容进行处理*/
+	 scroll-behavior:smooth;/*对滚动框指定滚动行为*/
+}
+
+body{
+	 backgrond:#fcf2e8;
+	 padding-left:30rem;/*令元素向左或向右移的效果*/
+}
+
+section{
+	 padding:1rem 5%;/*可增加元素的尺寸*/
+	 min-height:100vh;/*用最小高度撑高对象盒子*/
+}
+
+.heading{
+	 font-size:4rem;
+	 padding-bottom: 1rem;/*设置元素下内边距的宽度，rem单位是相对大小*/
+	 color:#111;
+}
+
+.btn{
+	 display:inline-block;
+	 margin-top:1rem;
+	 padding:.8rem 3rem;
+	 background:pink;
+	 color:#fff;
+	 cursor:pointer;/*定义鼠标指针放在一个元素边界范围内时所用的光标的形状，默认取值default是一个光标效果，pointer是一个小手效果*/
+	 font-size:1.7rem;
+	 
+}
+
+.btn:hover{
+	 background:#111;
+	 letter-spacing:.2rem;/*增加或减少字符间距*/
+}
+
+header{
+	 position:fixed;/*position设置为absolute和fixed元素都脱离了文档标准流*/
+	 top:0;
+	 left:0;
+	 bottom:0;
+	 background:#222;
+	 display:flex;/*用于确定元素的类型*/
+	 align-items:center;/*定义项目在交叉轴上如何对齐*/
+	 justify-content:space-between;/*设置同一行子元素在X轴的对齐方式*/
+	 z-index:1000;/*适用于定位元素*/
+	 flex-flow:column;/*是flex-wrap和 flex-direction的复合属性*/
+	 padding:8rem 2rem;
+	 width:30rem;
+	 text-align:center;
+}
+
+header .navbar a{
+	 display:block;
+	 font-size:2rem;
+	 color:#fff;
+	 margin:2rem 0;
+}
+
+
+.home{
+	 display:flex;
+	 align-items:center; /*定义项目在交叉轴上如何对齐*/
+	 flex-wrap:wrap;/*规定灵活项目是否拆行或拆列*/
+	 gap:1.5rem;
+	 
+}
+
+.home image{
+	  flex:1 1 40rem;
+}
+
+.home image img{
+	  width:100%;
+}
+
+.home .content{
+	  flex:1 1 40rem; 
+}
+
+.home .content .hi{
+	  font-size:2rem;
+	  color:pink;
+}
+
+.home .content h3{
+	  font-size:4.5rem;
+	  color:#111;
+}
+
+.home .content h3 span{
+	  color:pink;
+}
+
+.home .content .info{
+	  font-size:2.5rem;
+	  color:#111;
+	  padding:.5rem 0;
+}
+
+.home .content .text{
+	  font-size:1.7rem;
+	  color:#666;
+	  padding:.5rem 0;
+}
+
+.about .row-1{
+	  display:flex;
+	  flex-wrap:wrap;
+	  gap:1.5rem;
+	  padding-bottom:2rem;
+}
+
+.about .row-1 image{
+	  flex:1 1 25rem;
+}
+
+
+.about .row-1 image img{
+	  height:100%;
+	  width:100%;
+	  object-fit:cover;
+	  border:1rem solid #fff;
+	  border-radius:.5rem;
+	  box-shadow:0 .5rem 1rem rgba(0,0,0,.1);/*针对盒模型的阴影*/
+}
+
+.about .row-1 .content{
+	  flex:1 1 50rem;
+}
+
+
+.about .row-1 .content h3{
+	  color:#333;
+	  font-size:3.5rem;
+}
+
+.about .row-1 .content p{
+	  color:#666;
+	  font-size:1.7rem;
+	  padding:.5rem 0;
+}
+
+
+.about .row-1 .content .box-container{
+	  display:flex;
+	  flex-wrap:wrap;
+	  gap:1.5rem;
+	  padding:0.5rem 0;
+	  
+}
+
+
+.about .row-1 .content .box-container .box{
+      flex:1 1 20rem;
+	  
+}
+
+
+.about .row-1 .content .box-container .box span{
+      color:pink;
+	  
+}
+
+.about .row-2{
+	  display:flex;
+	  flex-wrap:wrap;
+	  gap:1.5rem;
+	  align-items:center;
+}
+
+
+.about .row-2 .skills{
+	   flex:1 1 40rem;
+	  
+}
+
+
+.about .row-2 .skills .progress{
+	   padding:1rem 0;
+	  
+}
+
+
+.about .row-2 .skills .progress h3{
+	   display:flex;
+	   justify-content:space-between;
+	   padding:.7rem 0;
+	   font-size:1.7rem;
+	   color:#111;
+	   font-weight:400;
+	  
+}
+
+
+.about .row-2 .skills .progress .bar{
+	   width:100%;
+	   background:#ccc;
+	   overflow:hidden;/*对溢出内容进行处理，hidden取值可以隐藏溢出内容且不出现滚动条*/
+	   height:1rem;
+	   border-radius:50rem;
+	   
+}
+
+
+.about .row-2 .skills .progress .bar span{
+       display:block;
+	   height:100%;
+	   backgrond:pink;
+	   border-radius:50rem;/*用于实现圆角边框*/
+	   
+}
+
+
+.about .row-2 .skills .progress:nth-child(1) .bar span{
+	   width:90%;
+}
+
+.about .row-2 .skills .progress:nth-child(2) .bar span{
+	   width:70%;
+}
+
+
+.about .row-2 .skills .progress:nth-child(3) .bar span{
+	   width:0%;
+}
+
+
+.about .row-2 .skills .progress:nth-child(4) .bar span{
+	   width:85%;
+}
+
+
+.about .row-2 .box-container .box{
+	   flex:1 1 15rem;
+	   background:#fff;
+	   padding:2rem;
+	   border-radius:.5rem;
+	   box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+.about .row-2 .box-container .box h3{
+	   color:pink;
+	   font-size:3rem;
+}
+
+.about .row-2 .box-container .box p{
+	   color:#666;
+	   font-size:1.7rem;
+	   padding-top:.5rem;
+}
+
+.portfolio .box-container{
+	   display:flex;
+	   flex-wrap:wrap;
+	   gap:1.5rem;
+	   
+}
+
+
+.portfolio .box-container .box{
+	   flex:1 1 30rem;
+	   height:25rem;
+	   position:relative;
+	   overflow:hidden;
+	   border:1rem solid #fff;
+	   box-shadow:0 .5rm 1rem rgba(0,0,0,.1);
+	   background:#fff;
+	   border-radius:.5rem;	   
+}
+
+
+.portfolio .box-container .box img{
+	   height:100%;
+	   width:100%;
+	   object-fit:cover;
+	   border-radius:.5rem;
+	   position:relative;
+	   z-index:1; 
+}
+
+
+.portfolio .box-container .box:hover img{
+	   height:85%;
+	   width:85%;
+}
+
+
+.contact .row{
+	   display:flex;
+	   flex-wrap:wrap;
+	   gap:1.5rem;
+}
+
+
+.contact .row form{
+	  flex:1 1 55rem;
+	  background:#fff;
+	  padding:0 2rem;
+	  box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+	  border-radius:.5rem;
+	  
+}
+
+
+.contact .row form .box,
+.contact .row form textarea{
+	  width:100%;
+	  border-bottom:.1rem solid #333;
+	  color:#333;
+	  text-transform:none;
+	  font-size:1.7rem;
+	  padding:1rem 0;
+	  margin:1rem 0;
+	  
+}
+
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+	border-color:pink;
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder{
+	text-transform:capitalize;
+}
+
+
+.contact .row form textarea{
+	height:20rem;
+	resize:none;
+	
+}
+
+.contact .row form .btn{
+	margin-top:0;
+	margin-bottom:1.5rem;
+	
+}
+
+@media (max-width:991px){
+	   html{
+		    font-size:55%;
+		   }
+	   body{
+		    padding:0;
+		   }
+	   #menu-bars{
+			display:initial;  
+			   }
+	   header{
+		    left:-120%;
+		   }
+	   header .active{
+		    left:0%;
+		   }
+	   .cursor-1,
+	   .cursor-2{
+		    display:none;
+		   }		   
+	}
+@media (max-width:450px){
+	   html{
+		    font-size:50%;
+		   }
+	   header{
+		    width:100%;
+		   }
+	   .experience .box-container .box{
+		    padding-right:0;
+		   }		   	
+	}
+
+
